@@ -4,17 +4,15 @@ import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 export default function App() {
   return (
-    <View className="flex-1 p-2">
-      <StatusBar style="dark" backgroundColor=''/>
-      <Text className="font-semibold text-xl text-center">Boost your life, Fast and track the time with ease</Text>
-      <View className=" flex-1 mt-2 rounded-md" style={{backgroundColor:'#9999ff'}}>
-          <Text className="text-white font-semibold text-center mt-2 text-lg">Fasting</Text>
+    <View className="flex-1 p-2 bg-gray-300">
+      <StatusBar style="light" backgroundColor=''/>
+      <Text className="font-semibold text-center">Boost your life, fast and track the time with ease</Text>
+      <View className=" flex-1 mt-2 rounded-md bg-blue-950" >
+          <Text className="text-white font-semibold text-center mt-2 text-lg">Now Fasting...</Text>
+          <View className="flex-1 p-2 items-center">
+            <Text className="text-white" >Time left</Text>
+          </View>
       </View>
     </View>
   );
 }
-// const styles = StyleSheet.create({
-//   container:{
-//     backgroundColor:'#9999ff'
-//   }
-// })
