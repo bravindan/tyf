@@ -1,6 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { Link } from 'expo-router';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import ProgressIndicator from '../../components/ProgressIndicator';
+// import CircularProgress from 'react-native-circular-progress-indicator';
 
 export default function App() {
   return (
@@ -10,7 +12,9 @@ export default function App() {
       <View className=" flex-1 mt-2 rounded-md bg-blue-950" >
           <Text className="text-white font-semibold text-center mt-2 text-lg">Now Fasting...</Text>
           <View className="flex-1 p-2 items-center">
+
             <Text className="text-white" >Time left</Text>
+            <ProgressIndicator/>
           </View>
       </View>
     </View>
