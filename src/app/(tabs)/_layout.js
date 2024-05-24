@@ -15,7 +15,7 @@ export default function HomeLayout(){
                 options={{
                     title:"Track Your Fast",
                     tabBarIcon:({color})=><FontAwesome size={26} name="home" color={color}/>,
-                    headerRight:()=><FontAwesome size={25} name="plus" color='#fff'/>,
+                    // headerRight:()=><FontAwesome size={25} name="plus" color='#fff'/>,
                 }}
             />
             <Tabs.Screen name="history"

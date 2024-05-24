@@ -1,22 +1,22 @@
+import React, { useEffect, useRef } from 'react';
 import CircularProgress, { ProgressRef } from 'react-native-circular-progress-indicator';
 
-export default function ProgressIndicator(){
+export default function ProgressIndicator() {
+  
+  return (
+    <CircularProgress
+      value={100}
+      radius={120}
+      duration={1000000}
+      progressValueColor={'#ecf0f1'}
+      // activeStrokeColor={'#f39c12'}
+      // activeStrokeColor={'#ecf0f1'}
 
-const progressRef = useRef<ProgressRef>(null);
-// to pause animation
-progressRef.current.pause();
-// to play animation
-progressRef.current.play();
-// to re-play animation
-progressRef.current.reAnimate();
-
-return(
-
- <CircularProgress
-  ref={progressRef}
-  value={100}
-  radius={120}
-  duration={10000}
-/>
-)
+      inactiveStrokeColor={'#ecf0f1'}
+      inactiveStrokeOpacity={0.5}
+      inactiveStrokeWidth={20}
+      activeStrokeWidth={20}
+      valueSuffix={'%'}
+    />
+  );
 }
